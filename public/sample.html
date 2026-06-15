@@ -1,47 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Sample Page</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-background: #f0f4f8;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
-}
-.card {
-background: white;
-padding: 40px;
-border-radius: 12px;
-box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-text-align: center;
-max-width: 400px;
-}
-h1 { color: #2d3748; }
-p { color: #718096; }
-button {
-margin-top: 20px;
-padding: 10px 24px;
-background: #4f46e5;
-color: white;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-font-size: 16px;
-}
-button:hover { background: #4338ca; }
-</style>
+    <meta charset="UTF-8">
+    <title>Jenkins Build Report</title>
 </head>
-<body>
-<div class="card">
-<h1>👋 Hello, World!</h1>
-<p>This is a sample HTML page running in your browser.</p>
-<button onclick="alert('It works!')">Click Me</button>
-</div>
+<body style="font-family: Arial, sans-serif; margin: 20px; background-color: #f4f6f9; color: #333;">
+
+    <div style="background-color: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); max-width: 600px; margin: auto;">
+        <h1 style="color: #1193bb; border-bottom: 2px solid #1193bb; padding-bottom: 10px;">Jenkins Automated Build Status</h1>
+        
+        <p style="font-size: 16px;">This HTML page was successfully generated and captured during the CI/CD execution pipeline.</p>
+        
+        <div style="background-color: #e6f4ea; border-left: 5px solid #137333; padding: 10px; margin: 20px 0; border-radius: 4px;">
+            <strong style="color: #137333;">Success:</strong> All deployment stages and unit tests executed cleanly.
+        </div>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+            <tr style="background-color: #f1f3f4;">
+                <th style="padding: 10px; border: 1px solid #dadce0; text-align: left;">Parameter</th>
+                <th style="padding: 10px; border: 1px solid #dadce0; text-align: left;">Value</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #dadce0;">Environment</td>
+                <td style="padding: 10px; border: 1px solid #dadce0;">Staging / QA</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #dadce0;">Build Artifact</td>
+                <td style="padding: 10px; border: 1px solid #dadce0;">App-v2.0.6-release</td>
+            </tr>
+        </table>
+        
+        <p style="font-size: 12px; color: #70757a; margin-top: 30px; text-align: center;">
+            Generated automatically by Jenkins on behalf of the DevOps team.
+        </p>
+    </div>
+
 </body>
 </html>
